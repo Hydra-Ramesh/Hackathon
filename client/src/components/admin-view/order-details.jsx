@@ -47,15 +47,15 @@ function AdminOrderDetailsView({ orderDetails }) {
       <div className="grid gap-6">
         <div className="grid gap-2">
           <div className="flex mt-6 items-center justify-between">
-            <p className="font-medium">Order ID</p>
+            <p className="font-medium">Rent ID</p>
             <Label>{orderDetails?._id}</Label>
           </div>
           <div className="flex mt-2 items-center justify-between">
-            <p className="font-medium">Order Date</p>
+            <p className="font-medium">Rent Date</p>
             <Label>{orderDetails?.orderDate.split("T")[0]}</Label>
           </div>
           <div className="flex mt-2 items-center justify-between">
-            <p className="font-medium">Order Price</p>
+            <p className="font-medium">Rent Price</p>
             <Label>${orderDetails?.totalAmount}</Label>
           </div>
           <div className="flex mt-2 items-center justify-between">
@@ -67,7 +67,7 @@ function AdminOrderDetailsView({ orderDetails }) {
             <Label>{orderDetails?.paymentStatus}</Label>
           </div>
           <div className="flex mt-2 items-center justify-between">
-            <p className="font-medium">Order Status</p>
+            <p className="font-medium">Rent Status</p>
             <Label>
               <Badge
                 className={`py-1 px-3 ${
@@ -86,7 +86,7 @@ function AdminOrderDetailsView({ orderDetails }) {
         <Separator />
         <div className="grid gap-4">
           <div className="grid gap-2">
-            <div className="font-medium">Order Details</div>
+            <div className="font-medium">Rent Details</div>
             <ul className="grid gap-3">
               {orderDetails?.cartItems && orderDetails?.cartItems.length > 0
                 ? orderDetails?.cartItems.map((item) => (

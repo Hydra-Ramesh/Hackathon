@@ -48,10 +48,10 @@ function ShoppingOrders() {
         <Table>
           <TableHeader>
             <TableRow>
-              <TableHead>Order ID</TableHead>
-              <TableHead>Order Date</TableHead>
-              <TableHead>Order Status</TableHead>
-              <TableHead>Order Price</TableHead>
+              <TableHead>Rent ID</TableHead>
+              <TableHead>Rent Date</TableHead>
+              <TableHead>Rent Status</TableHead>
+              <TableHead>Rent Price</TableHead>
               <TableHead>
                 <span className="sr-only">Details</span>
               </TableHead>
